@@ -11,6 +11,12 @@ color:blue;
 }
 
 
+#calculator{
+width:20%;
+margin:auto;
+text-align:center;
+}
+
 #container{
 display:inline-block;
 }
@@ -29,6 +35,11 @@ width:25px;
 input[name="text0"]{
 height:25px;
 width:150px;
+}
+input[name="text1"]{
+height:25px;
+width:150px;
+border:0;
 }
 input[name="button14"]{
 height:25px;

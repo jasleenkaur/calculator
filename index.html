@@ -1,14 +1,32 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
+<script language="javascript">
+r="";  //r is global here (declared without 'var')
+
+function collect_value(form,bt_value){
+r=r + bt_value;
+form.elements[1].value=r;
+}
+
+function calculate(form){
+form.elements[0].value=eval(form.elements[1].value);
+}
+
+function clean(form){
+r="";  //empty the string
+}
+</script>
 </head>
 <body>
+<div id="calculator">
 <form>
 <h2>A Simple Calculator</h2><br>
 <div>
-<input type="text" name="text0" placeholder="ans">
+<input type="text" name="text0" placeholder="ans"><br>
+<input type="text" name="text1" placeholder="expression">
 </div>
-<div id=container>
+<div id="container">
 <div id="num_button">
 <input type="button" name="button0" value="1" onClick="collect_value(this.form,this.value);">
 <input type="button" name="button1" value="2" onClick="collect_value(this.form,this.value);">
@@ -31,10 +49,11 @@
 <input type="button" name="button13" value="/" onClick="collect_value(this.form,this.value);">
 </div>
 <div>
-<input type="button" name="button14" value="calculate" onClick="calulate();">
-<input type="reset" name="button15" value="clear"">
+<input type="button" name="button14" value="calculate" onClick="calculate(this.form);">
+<input type="reset" name="button15" onClick="clean(form);">
 </div>
 </div>
 </form>
+</div>
 </body>
 </html>
