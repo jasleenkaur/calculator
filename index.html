@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form>
+<h3>A Simple Calculator</h3><br>
+<div>
+<input type="text" name="text0" placeholder="ans">
+</div>
+<div id=container>
+<div id="num_button">
+<input type="button" name="button0" value="1" onClick="collect_value(this.form,this.value);">
+<input type="button" name="button1" value="2" onClick="collect_value(this.form,this.value);">
+<input type="button" name="button2" value="3" onClick="collect_value(this.form,this.value);">
+<br>
+<input type="button" name="button3" value="4" onClick="collect_value(this.form,this.value);">
+<input type="button" name="button4" value="5" onClick="collect_value(this.form,this.value);">
+<input type="button" name="button5" value="6" onClick="collect_value(this.form,this.value);">
+<br>
+<input type="button" name="button6" value="7" onClick="collect_value(this.form,this.value);">
+<input type="button" name="button7" value="8" onClick="collect_value(this.form,this.value);">
+<input type="button" name="button8" value="9" onClick="collect_value(this.form,this.value);">
+<br>
+<input type="button" name="button9" value="0" onClick="collect_value(this.form,this.value);">
+</div>
+<div id="oper_button">
+<input type="button" name="button10" value="+" onClick="collect_value(this.form,this.value);"><br>
+<input type="button" name="button11" value="-" onClick="collect_value(this.form,this.value);"><br>
+<input type="button" name="button12" value="*" onClick="collect_value(this.form,this.value);"><br>
+<input type="button" name="button13" value="/" onClick="collect_value(this.form,this.value);">
+</div>
+<div>
+<input type="button" name="button14" value="calculate" onClick="calulate();">
+<input type="reset" name="button15" value="clear"">
+</div>
+</div>
+</form>
+</body>
+</html>
