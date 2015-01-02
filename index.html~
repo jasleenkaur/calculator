@@ -3,7 +3,6 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="calculator">
 <form>
 <h3>A Simple Calculator</h3><br>
 <div>
@@ -37,6 +36,5 @@
 </div>
 </div>
 </form>
-</div>
 </body>
 </html>
